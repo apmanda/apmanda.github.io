@@ -1,47 +1,66 @@
-body {
-    background-color:aliceblue;
+body {background-color:aliceblue;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', serif;
+    font-weight: normal;
 }
 
-header {
-    background-color:cadetblue;
-    padding: 1px 20px;
-    margin: 0px 0px 10px;
+p {
+    font-family: Poppins, verdana, sans-serif;
+    font-size: 1em;
 }
 
+/* name header */
 h1 {
-    font-family: georgia, serif;
+    font-family: ;
     font-size: 4em;
-    color:aliceblue;
-    margin-bottom: 5px;
+    color: hsl(230,40%,30%,1);
+    padding: 6% 0 0 4%;
+    margin:0;
 }
 
-nav {
-    padding: 10px;
-    display:inline-block;
+/* nav_bar */
+#nav_bar {
+    width:100%;
+    padding: 0;
+    margin: 0;
+    background-color: hsla(200,50%,80%,1);
+    background-image: url('images/cloud_wallpaper.png');
+    background-repeat: no-repeat;
+    background-position: 0% 73%;
+    background-size: cover;
 }
-nav, nav a {
-    font-family:verdana, sans-serif;
-    color:aliceblue;
-    text-transform: uppercase;
+#nav_bar nav ul {
+    background-color: hsla(197,70%,90%,.9);
+    list-style-type: none;
+    padding: 0;
+    padding-right: 5%;
+    margin: 0;
+    overflow: hidden;
+}
+#nav_bar nav li {
+    float: right;
+}
+#nav_bar nav a {
+    color: hsla(200,40%,30%,1);
+    font-family: Poppins, verdana, sans-serif;
+    font-size: 1.2em;
     text-decoration: none;
+    text-transform: uppercase;
+    display:block;
+    padding: 10px 40px;
 }
-nav a:hover {
-    color:ghostwhite;
+#nav_bar nav a:hover {
+    color: hsla(200,30%,20%,1);
+    background-color: hsla(192,50%,80%,1);
 }
 
 h2 {
     padding-left: 10px;
 }
 
-div.main {
+#main {
     width: 80%;
     margin:auto;
-    background-color:white;
     padding: 1%;
-}
-
-p {
-    font-family: arial, verdana, sans-serif;
-    font-size: 1em;
-    letter-spacing: .05em;
 }
