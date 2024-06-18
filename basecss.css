@@ -1,0 +1,47 @@
+body {
+    background-color:aliceblue;
+}
+
+header {
+    background-color:cadetblue;
+    padding: 1px 20px;
+    margin: 0px 0px 10px;
+}
+
+h1 {
+    font-family: georgia, serif;
+    font-size: 4em;
+    color:aliceblue;
+    margin-bottom: 5px;
+}
+
+nav {
+    padding: 10px;
+    display:inline-block;
+}
+nav, nav a {
+    font-family:verdana, sans-serif;
+    color:aliceblue;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav a:hover {
+    color:ghostwhite;
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+div.main {
+    width: 80%;
+    margin:auto;
+    background-color:white;
+    padding: 1%;
+}
+
+p {
+    font-family: arial, verdana, sans-serif;
+    font-size: 1em;
+    letter-spacing: .05em;
+}
