@@ -1,0 +1,692 @@
+<html lang="en">
+    <head>
+        <title>Mintychocolatelover's Neopets Dailies</title>
+        <style>
+            body, div, table, p, a {
+                color: #144d4d;
+                font: 10pt verdana;
+            }
+            body {
+                background-color: #d8e5e4;
+            }
+            
+            #mobnav { 
+                border: 1px solid #a4cecd;
+                display: none;
+                margin: 0 5px 50px;
+            }
+            #navbar {
+                background-color: #217775;
+                text-align: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 0;
+                margin: 0 auto;
+                z-index: 1000;
+            }
+            .nav {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .nav li {
+                display: inline-block;
+            }
+            .nav li a {
+                background-color: none;
+                color: #a4cecd;
+                font-size: 12pt;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 10px 30px;
+                margin: 0;
+            }
+            .nav li a:hover {
+                background-color: #0d2d2a;
+                color: #217775;
+            }
+            .nav ul.nhover {
+                background-color: #0d2d2a;
+                list-style: none;
+                text-align: center;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                display: none;
+                z-index: 1000;
+            }
+            .nav li:hover ul.nhover {
+                display: block;
+            }
+            ul.nhover li, ul.nhover li a {
+                display: block;
+                text-align: center;
+            }
+            ul.nhover li a, ul.nhover li a:hover {
+                background: none;
+                padding: 15px 10px;
+            }
+            @media screen and (max-width: 840px) {
+                #navbar { display: none; }
+                #neopass { display: none; }
+                #mobnav { display: block; }
+            }
+
+            .main {
+                text-align: center;
+                top: 0;
+                left: 0;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+            .main a {
+                color: #217775;
+                text-decoration: none;
+            }
+            .main a:hover {
+                color: #00b9a4;
+                font-style: italic;
+            }
+            .bx {
+                background-color: #fff;
+                border: 1px solid #217775;
+                text-align: center;
+                display: inline-block;
+                width: 160px;
+                padding: 20px 0px;
+                margin: 4px 2px;
+            }
+            .bx:hover { 
+                background-color: #f4fffc;
+            }
+            .bx a {
+                color: #288e8e;
+                text-decoration: none;
+            }
+            .bx a:hover {
+                color: #1aacb2;
+            }
+            .bx a img {
+                border: 2px solid #eafffb;
+                width: 80px;
+                height: 80px;
+            }
+            .bx a:hover img {
+                border: 2px solid #88dde0;
+            }
+            .tip {
+                background-color: #fff;
+                border: 1px solid #88dde0;
+                color: #288e8e;
+                font-size: 9pt;
+                text-transform: uppercase;
+                display: inline-block;
+                width: 100px;
+                height: 20px;
+                margin: 0 auto 25px;
+            }
+            .tip:hover {
+                background-color: #eafffb;
+                border: 1px solid #288e8e;
+            }
+            .tipbx {
+                background-color: #fff;
+                border: 1px solid #88dde0;
+                color: #288e8e;
+                text-align: center;
+                text-transform: none;
+                top: -12px;
+                left: -40px;
+                width: 154px;
+                padding: 8px 12px 10px;
+                margin: 0;
+                display: none;
+                z-index: 90;
+            }
+            .tip:hover .tipbx {
+                display: inline-block;
+            }
+            
+            .bx2 {
+                background-color: #fff;
+                border: 1px solid #217775;
+                text-align: center;
+                display: inline-block;
+                width: 138px;
+                padding: 20px 0px;
+                margin: 4px 2px;
+            }
+            .bx2:hover { 
+                background-color: #f4fffc;
+            }
+            .bx2 a {
+                color: #288e8e;
+                text-decoration: none;
+            }
+            .bx2 a:hover {
+                color: #1aacb2;
+            }
+            .bx2 a img {
+                border: 2px solid #eafffb;
+                width: 80px;
+                height: 80px;
+            }
+            .bx2 a:hover img {
+                border: 2px solid #88dde0;
+            }
+            
+            h1 {
+                background-color: #a4cecd;
+                color: #217775;
+                font: bold 10pt verdana;
+                text-transform: uppercase;
+                width: 100%;
+                padding: 20px 0px;
+                margin: 60px 0px 20px;
+            }
+            h2 {
+
+            }
+            hr {
+                background-color: #217775;
+                border: none;
+                margin: 50px 0;
+                height: 1px;
+            }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="navbar">
+            <ul class="nav" style="position: relative;">
+                <li style="position: relative;"><a href="https://www.neopets.com/tvw/" target="_blank">TVW Hub</a>
+                <ul class="nhover" style="position: absolute;border-radius: 0 0 10px 10px;">
+                    <li><a href="https://www.neopets.com/hospital/volunteer.phtml" target="_blank">Shifts</a></li>
+                    <li><a href="https://sunnyneo.com/plots/void/voidessence.php" target="_blank">Essence</a></li>
+                    <li><a href="https://www.neopets.com/dome/barracks.phtml" target="_blank">Battles</a></li>
+                </ul></li>
+                <li style="position: relative;"><a href="https://www.neopets.com/settings/profile/" target="_blank">My Account</a>
+                <ul class="nhover" style="position: absolute;border-radius: 0 0 10px 10px;">
+                    <li><a href="https://www.neopets.com/questlog/" target="_blank">Quests</a></li>
+                    <li><a href="https://www.neopets.com/bank.phtml" target="_blank">Bank</a></li>
+                    <li><a href="https://www.neopets.com/stockmarket.phtml?type=portfolio" target="_blank">Stocks</a></li>
+                </ul></li>
+                <li style="position: relative;"><a href="https://www.neopets.com/home" target="_blank">My Pets</a>
+                <ul class="nhover" style="position: absolute;border-radius: 0 0 10px 10px;">
+                    <li><a href="https://www.neopets.com/pirates/academy.phtml?type=status" target="_blank">Pirate Academy</a></li>
+                    <li><a href="https://www.neopets.com/island/training.phtml?type=status" target="_blank">Island Academy</a></li>
+                    <li><a href="https://www.neopets.com/halloween/gravedanger/index.phtml" target="_blank">Grave Danger</a></li>
+                </ul></li>
+                <li style="position: relative;"><a href="https://www.neopets.com/inventory.phtml" target="_blank">Inventory</a>
+                <ul class="nhover" style="position: absolute;border-radius: 0 0 10px 10px;">
+                    <li><a href="https://www.neopets.com/safetydeposit.phtml" target="_blank">SDB</a></li>
+                    <li><a href="https://www.neopets.com/quickstock.phtml" target="_blank">Quick Stock</a></li>
+                </ul></li>
+                <li style="position: relative;"><a href="https://www.neopets.com/faerieland/springs.phtml" target="_blank">Healing Springs</a></li>
+            </ul>
+</div>
+
+        <div class="main" style="position: absolute;">
+            <h1>My Dailies</h1>
+            <div id="neopass" class="bx" style="min-width: 752px;">
+                <a href="https://account.neopets.com/classic/login" target="_blank">Neopass Login Launch</a>
+            </div>
+            
+            <!-- mobile top nav -->
+            <div id="mobnav">
+                <div class="bx2" style="position: relative;">
+                    <a href="https://account.neopets.com/classic/login" target="_blank">
+                       Neopass Launch
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/home" target="_blank">
+                       Pet Hub
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/bank.phtml" target="_blank">
+                        Bank
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/tvw/" target="_blank">
+                        TVW Hub
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://sunnyneo.com/plots/void/voidessence.php" target="_blank">
+                        Essences
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/dome/barracks.phtml" target="_blank">
+                        Battles
+                    </a>
+                </div><br>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/hospital/volunteer.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/plu_blumaroo_doctor.gif"><br>
+                        Hospital Shifts
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative">
+                    <a href="https://www.neopets.com/halloween/strtest/index.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/gar_testyourstrength.gif"><br>
+                        Test Your Strength
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/pirates/academy.phtml?type=status" target="_blank">
+                        <img src="https://images.neopets.com/items/plu_capn_threelegs.gif"><br>
+                        Pirate Academy
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/island/training.phtml?type=status" target="_blank">
+                        <img src="https://images.neopets.com/items/codestone11.gif"><br>
+                        Island Academy
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/halloween/gravedanger/index.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/sta_gd_grave_danger.gif"><br>
+                        Grave Danger
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/questlog/" target="_blank">
+                        <img src="https://images.neopets.com/items/toy_hannah_action.gif"><br>
+                        Quests
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/stockmarket.phtml?type=portfolio" target="_blank">
+                        <img src="https://images.neopets.com/games/game_stocks.gif"><br>
+                        Stock Portfolio
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/quickstock.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/sch_clipboard_blue.gif"><br>
+                        Quick Stock
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/safetydeposit.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/ppph_treasurechest.gif"><br>
+                        SDB
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/inventory.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/toy_y20haltot_lunartemple.gif"><br>
+                        Inventory
+                    </a>
+                </div>
+                <div class="bx2" style="position: relative;">
+                    <a href="https://www.neopets.com/faerieland/springs.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/toy_faerie_water.gif"><br>
+                        Healing Springs
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Main Body -->
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/trudys_surprise.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/gro_mynci_hairgel.gif"><br>
+                        Trudy's Slots
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/halloween/strtest/index.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/gar_testyourstrength.gif"><br>
+                        Test Your Strength
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Every 6hrs; Costs 100nps
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/halloween/applebobbing.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/toy_applebob_game.gif"><br>
+                        Apple Bobbing
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day - Risky
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/prehistoric/mediocrity.phtml" target="_blank">
+                        <img src="https://images.neopets.com/wheels/new/tm_mediocrity.jpg"><br>
+                        Wheel of Mediocrity
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Every 40mins; Costs 100nps
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/faerieland/wheel.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/sta_stw_wheelofexcitement.gif"><br>
+                        Wheel of Excitement
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Every 2hrs; Costs 500nps
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/medieval/knowledge.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/toy_bv_wheelofknowledge.gif"><br>
+                        Wheel of Knowledge
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day; Costs 400nps
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/jelly/jelly.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/jel_lime_whole.gif"><br>
+                        Giant Jelly
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/prehistoric/omelette.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/toy_y19haltot_giantom_action.gif"><br>
+                        Giant Omelette
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/shop_of_offers.phtml?slorg_payout=yes" target="_blank">
+                        <img src="https://images.neopets.com/items/hall_petpet1.gif"><br>
+                        Shop of Offers
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/faerieland/tdmbgpop.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/clo_y19haltot_bluegrundo_hh.gif"><br>
+                        Discarded MBG Plushie
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/pirates/anchormanagement.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/fur_pirate_anchor.gif"><br>
+                        Anchor Management
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/pirates/forgottenshore.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/sta_forgotten_shore.gif"><br>
+                        Forgotten Shore
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/water/fishing.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/gar_fishing_meepit.gif"><br>
+                        Fishing
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Random - Usually 12-24hrs tho
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/desert/shrine.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/stamp_desert_shrine.gif"><br>
+                        Coltzan's Shrine
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per 12hrs
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/island/tombola.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/toy_squeezy_tombola.gif"><br>
+                        Tombola
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/desert/fruitmachine.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/sta_fruitmachine.gif"><br>
+                        Fruit Machine
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/worlds/geraptiku/tomb.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/toy_deserted_tomb.gif"><br>
+                        Deserted Tomb
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day - Risky
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/community/index.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/book_bigpuzzles.gif"><br>
+                        Daily Puzzle
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day - <a href="https://www.sunnyneo.com/dailies.php" target="_blank">Answer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/shenkuu/neggcave/" target="_blank">
+                        <img src="https://images.neopets.com/items/gif_negg_goldgem.gif"><br>
+                        Negg Puzzle
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/stockmarket.phtml?type=list&bargain=true" target="_blank">
+                        <img src="https://images.neopets.com/games/game_stocks.gif"><br>
+                        Bargain Stocks
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            1000 shares per day; Costs 15nps+
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/lab.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/plu_madscientist_labray.gif"><br>
+                        Secret Lab Ray
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/petpetlab.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/plu_madscientist_kookith.gif"><br>
+                        Petpet Lab Ray
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/games/giveaway/giveaway_game.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/bat_desert_scarab.gif"><br>
+                        Qasalan Expellibox *
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once every 8hrs *FLASH
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/space/strangelever.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/coi_leverofdoom.gif"><br>
+                        Lever of Doom
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Anytime; Costs 100nps
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/medieval/turmaculus.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/toy_turmaculus_figure.gif"><br>
+                        Turmaculus
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Specific times of the Day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/winter/snowager.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/foo_negg_snowager.gif"><br>
+                        Snowager
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            6-7am NST, 2-3pm NST, 10-11pm NST
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/medieval/wiseking.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/bvg_hagan3.gif"><br>
+                        Wise Old King
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Unavailable: 8-9am, 1-2pm, 7-8pm NST
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/medieval/grumpyking.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/toy_plushie_skarl.gif"><br>
+                        Grumpy Old King
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Goes out to Lunch sometimes
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/dome/" target="_blank">
+                        <img src="https://images.neopets.com/items/bd_bfm_battle_hammer.gif"><br>
+                        Battledome
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            50k nps & 15 items per day
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/freebies/" target="_blank">
+                        <img src="https://images.neopets.com/items/dogbook_giftshop.gif"><br>
+                        Monthly Freebies
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Once per month
+                        </div>
+                    </div>
+                </div>
+                <div class="bx" style="position: relative;">
+                    <a href="https://www.neopets.com/winter/adventcalendar.phtml" target="_blank">
+                        <img src="https://images.neopets.com/items/advent_cal_xmas.gif"><br>
+                        Advent Calendar
+                    </a><br><br>
+                    <div class="tip" style="position: relative;">
+                        <div class="tipbx" style="position: absolute;">
+                            Every day in December
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <p class="creds">
+                <i>Layout and Design by <a href="https://www.neopets.com/userlookup.phtml?user=mintychocolatelover" target="_blank">Manda</a></i><br>
+                NEOPETS and all related indicia are trademarks of Neopets, Inc. &copy; 1999-2024<br> All rights reserved.
+            </p><br>
+        </div>
+    </body>
+</html>
