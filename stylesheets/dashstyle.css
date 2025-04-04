@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a, a:link, a:visited {
+    color: #eee;
+    text-decoration: none;
+}
+a:hover {
+    color: pink;
+}
+
+h1 {
+    padding: 40px;
+    transition: 3s;
+}
+hr.navBreak {
+    background: none;
+    border: none;
+    margin: 5px;
+}
+
+.layout {
+    background: #fff;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'nav1'
+        'footer';
+    gap: 0px;
+}
+
+.block1 {
+    background: #333;
+    color: #ddd;
+    grid-area: header;
+    padding: 40px;
+}
+
+.block2 {
+    background: #555;
+    color: #ddd;
+    text-align: center;
+    grid-area: nav1;
+    padding: 10px;
+}
+
+.block5 {
+    background: #333;
+    color: #ddd;
+    grid-area: footer;
+    padding: 40px;
+}
+
+.navgrid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-column: auto;
+    max-width: 1200px;
+    margin: auto;
+}
+.gmails {
+    display: grid; 
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.button {
+    background: #999;
+    border-radius: 10px;
+    display: block;
+    overflow-wrap: break-word;
+    padding: 40px 20px;
+}
+.button:hover {
+    background: #9f646e;
+    transition: 0.5s;
+}
+.button i {
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+
+@media screen and (max-width: 860px) {
+    h1 { padding: 0px; }
+    .navgrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 680px) {
+    h1 { text-align: center; font-size: 1.5em; }
+
+    .block1 { padding: 20px; }
+
+    .navgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .gmails { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .gmails .button { padding: 20px 10px; font-size: .8em; }
+    .gmails .button i { font-size: 1.5em; }
+
+}

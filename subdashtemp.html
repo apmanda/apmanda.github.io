@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>dashboard template</title>
+        
+        <style>
+            * {
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-size: 1em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            a {
+                text-decoration: none;
+            }
+            
+            /*header*/
+            h1 {
+                background: #333;
+                text-align: center;
+                color: #eee;
+                padding: 20px;
+            }
+            .navblock {
+                background: #eee;
+                color: blue;
+                text-align: center;
+                font-size: 1.5em;
+                letter-spacing: .2em;
+                padding: 10px;
+                position: sticky;
+                top: 0;
+                left: 0;
+            }
+            .navblock a {
+                color: #333;
+            }
+            .navblock a:hover {
+                color: #888;
+                transition: 0.1s;
+            }
+            
+            /*grids and buttons*/
+            .block {
+                display: grid;
+                gap: 10px;
+                margin: 10px;
+            }
+            
+            .one { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+            .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+            
+            .button {
+                display: block;
+                background: #ddd;
+                border-radius: 8px;
+                color: #333;
+                text-align: center;
+                padding: 20px;
+            }
+            .button i {
+                font-size: 1.8em;
+                margin-bottom: 8px;
+            }
+            .button:hover {
+                background: #ccc;
+                color: #444;
+                transition: 0.1s;
+            }
+            
+            /*footer*/
+            footer {
+                background: #333;
+                color: #eee;
+                padding: 10px;
+            }
+        </style>
+        
+        <script src="https://kit.fontawesome.com/754c3ee956.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1><i class="fa fa-circle"></i> Dashboard</h1>
+        <div class="navblock">
+            <!--<a href="/dashboard.html" alt="dashboard home">--><i class="fa fa-home"></i><!--</a>-->
+            <a href="/" alt="google drive"><i class="fa fa-chrome"></i></a>
+            <a href="/" alt="Notion"><i class="fa fa-box-archive"></i></a>
+            <a href="/" alt="NeoDash"><i class="fa fa-star"></i></a>
+            <a href="/" alt="Drawing Dash"><i class="fa fa-palette"></i></a>
+            <a href="/" alt="Writing Dash"><i class="fa fa-pencil"></i></a>
+            <a href="/" alt="Sewing Dash"><i class="fa fa-scissors"></i></a>
+            <a href="/" alt="Coding Dash"><i class="fa fa-code"></i></a>
+        </div>
+        <div class="block three">
+            <a href="/" class="button"><i class="fa fa-circle"></i><br> Link Here</a>
+            <a href="/" class="button"><i class="fa fa-circle"></i><br> Link Here</a>
+            <a href="/" class="button"><i class="fa fa-circle"></i><br> Link Here</a>
+        </div>
+        <div class="block two">
+            <a href="/" class="button"><i class="fa fa-circle"></i><br> Link Here</a>
+            <a href="/" class="button"><i class="fa fa-circle"></i><br> Link Here</a>
+            <a href="/" class="button"><i class="fa fa-circle"></i><br> Link Here</a>
+            <a href="/" class="button"><i class="fa fa-circle"></i><br> Link Here</a>
+        </div>
+        <div class="block one">
+            <a href="/" class="button"><i class="fa fa-circle"></i><br> Link Here</a>
+            <a href="/" class="button"><i class="fa fa-circle"></i><br> Link Here</a>
+        </div>
+        <div class="block three">
+            <a href="/" class="button"><i class="fa fa-circle"></i><br> Link Here</a>
+            <a href="/" class="button"><i class="fa fa-circle"></i><br> Link Here</a>
+            <a href="/" class="button"><i class="fa fa-circle"></i><br> Link Here</a>
+        </div>
+        <footer>
+            <p>A.P. Barnes &copy; 2025</p>
+        </footer>
+    </body>
+</html>
