@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #d5adc5;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+h1 {
+    background: #2f315a;
+    text-align: center;
+    color: #eee;
+    padding: 20px;
+}
+h2 {
+    background: rgba(255, 255, 255, .5);
+    color: #2f315a;
+    font-family: Georgia, 'Times New Roman', Times, Serif;
+    font-style: italic;
+    letter-spacing: .2em;
+    text-align: center;
+    margin: 10px auto;
+}
+
+/*navigation*/
+.navblock {
+    background: #fffae4;
+    color: #ddad0b;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: .2em;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.navblock a {
+    color: #5c4d0c;
+}
+.navblock a:hover {
+    color: #bd91ab;
+    transition: 0.1s;
+}
+.neonav {
+    display: none;
+    margin-top: 10px;
+    position: sticky;
+}
+
+
+/*grids and buttons*/
+.block {
+    display: grid;
+    gap: 10px;
+    place-content: center;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+.one { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.six { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+
+.button {
+    display: block;
+    background: #fff;
+    border-radius: 8px;
+    color: #333;
+    text-align: center;
+    overflow-wrap: break-word;
+    padding: 20px;
+}
+.button i {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+}
+.button img {
+    width: 100%;
+    max-width: 80px;
+    mix-blend-mode: multiply;
+}
+.button:hover {
+    background: #fffae4;
+    color: #5c4d0c;
+    transition: 0.1s;
+}
+
+
+/*for hiding and showing dropdown-ish elements*/
+
+
+/*footer*/
+footer {
+    background: #2f315a;
+    color: #eee;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.floatlink {
+    font-size: 1.8em;
+    margin-left: 10px;
+}
+
+/*media max-width or smaller*/
+@media screen and (max-width: 1000px) {
+    .block { margin: 10px; }
+
+    .dailies {
+        gap: 5px;
+        margin: 5px;
+    }
+    .dailies .button { font-size: .85em; }
+}
+
+/*media medium screen*/
+
+/*media small screen*/
+@media screen and (max-width: 600px) {
+    .navblock { letter-spacing: .1em; }
+    .neonav { display: block; }
+    .topblock { display: none; }
+    .four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .six { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .button i, .floatlink { font-size: 1.5em; }
+}

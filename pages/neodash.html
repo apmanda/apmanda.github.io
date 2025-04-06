@@ -4,146 +4,16 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>dashboard template</title>
+        <title>NeoDash</title>
         
-        <style>
-            * {
-                margin: 0;
-                box-sizing: border-box;
-            }
-            
-            body {
-                background: #d5adc5;
-                font-size: 1em;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-            a {
-                text-decoration: none;
-            }
-            
-            h1 {
-                background: #2f315a;
-                text-align: center;
-                color: #eee;
-                padding: 20px;
-            }
-            h2 {
-                background: rgba(255, 255, 255, .5);
-                color: #2f315a;
-                font-family: Georgia, 'Times New Roman', Times, Serif;
-                font-style: italic;
-                letter-spacing: .2em;
-                text-align: center;
-                margin: 10px auto;
-            }
-            
-            /*navigation*/
-            .navblock {
-                background: #fffae4;
-                color: #ddad0b;
-                text-align: center;
-                font-size: 1.5em;
-                letter-spacing: .2em;
-                padding: 10px;
-                position: sticky;
-                top: 0;
-                left: 0;
-                z-index: 999;
-            }
-            .navblock a {
-                color: #5c4d0c;
-            }
-            .navblock a:hover {
-                color: #bd91ab;
-                transition: 0.1s;
-            }
-            .neonav {
-                display: none;
-                margin-top: 10px;
-                position: sticky;
-            }
-            
-            
-            /*grids and buttons*/
-            .block {
-                display: grid;
-                gap: 10px;
-                place-content: center;
-                max-width: 1000px;
-                margin: 10px auto;
-            }
-            
-            .one { grid-template-columns: repeat(1, minmax(0, 1fr)); }
-            .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-            .three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-            .four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-            .six { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-            
-            .button {
-                display: block;
-                background: #fff;
-                border-radius: 8px;
-                color: #333;
-                text-align: center;
-                overflow-wrap: break-word;
-                padding: 20px;
-            }
-            .button i {
-                font-size: 1.8em;
-                margin-bottom: 8px;
-            }
-            .button img {
-                width: 100%;
-                max-width: 80px;
-                mix-blend-mode: multiply;
-            }
-            .button:hover {
-                background: #fffae4;
-                color: #5c4d0c;
-                transition: 0.1s;
-            }
-            
-            /*footer*/
-            footer {
-                background: #2f315a;
-                color: #eee;
-                padding: 10px;
-                margin-top: 20px;
-            }
-            
-            .floatlink {
-                font-size: 1.8em;
-                margin-left: 10px;
-            }
-            
-            /*media max-width or smaller*/
-            @media screen and (max-width: 1000px) {
-                .block { margin: 10px; }
-            
-                .dailies {
-                    gap: 5px;
-                    margin: 5px;
-                }
-                .dailies .button { font-size: .85em; }
-            }
-            
-            /*media medium screen*/
-            
-            /*media small screen*/
-            @media screen and (max-width: 600px) {
-                .navblock { letter-spacing: .1em; }
-                .neonav { display: block; }
-                .topblock { display: none; }
-                .four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-                .six { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-                .button i, .floatlink { font-size: 1.5em; }
-            }
-        </style>
-        
-        <script src="https://kit.fontawesome.com/754c3ee956.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="/images/neo.png">
+        <link rel="stylesheet" href="/css/neodash.css">
     </head>
     <body>
+        
         <h1><i class="fa fa-star"></i> Neopets</h1>
+        
+        <!-- MAIN NAVIGATION -->
         <div class="navblock">
             <a href="/dashboard.html" alt="dashboard home"><i class="fa fa-home"></i></a>
             <a href="https://drive.google.com/drive/u/0/my-drive" alt="google drive"><i class="fa fa-chrome"></i></a>
@@ -153,6 +23,8 @@
             <a href="/writingdash.html" alt="Writing Dash"><i class="fa fa-pencil"></i></a>
             <a href="/sewingdash.html" alt="Sewing Dash"><i class="fa fa-scissors"></i></a>
             <a href="/codedash.html" alt="Coding Dash"><i class="fa fa-code"></i></a>
+            
+            <!-- MOBILE ESSENTIALS-->
             <div class="neonav">
                 <a href="https://www.neopets.com/settings/profile/" target="_blank"><i class="fa fa-circle-user"></i></a>
                 <a href="https://www.neopets.com/home" target="_blank"><i class="fa fa-paw"></i></a>
@@ -164,9 +36,13 @@
                 <a href="https://www.neopets.com/faerieland/springs.phtml" target="_blank"><i class="fa fa-first-aid"></i></a>
             </div>
         </div>
+        
+        <!-- LAUNCH NEOPASS -->
         <div class="block one">
             <a href="https://account.neopets.com/classic/login" class="button" target="_blank"><i class="fa fa-right-to-bracket"></i> <b class="floatlink">Launch Neopass</b></a>
         </div>
+        
+        <!-- ESSENTIALS (not visible on mobile) -->
         <div class="block three topblock">
             <a href="https://www.neopets.com/settings/profile/" class="button" target="_blank"><i class="fa fa-circle-user"></i><br>Account</a>
             <a href="https://www.neopets.com/home" class="button" target="_blank"><i class="fa fa-paw"></i><br>Pets</a>
@@ -178,6 +54,8 @@
             <a href="https://www.neopets.com/questlog/" class="button" target="_blank"><i class="fa fa-clipboard-list"></i><br>Quests</a>
             <a href="https://www.neopets.com/faerieland/springs.phtml" class="button" target="_blank"><i class="fa fa-first-aid"></i><br>Heal</a>
         </div>
+        
+        <!-- DAILIES -->
         <h2>Dailies</h2>
         <div class="block six dailies">
             <a href="https://www.neopets.com/prehistoric/mediocrity.phtml" class="button" target="_blank"><img src="https://images.neopets.com/wheels/new/tm_mediocrity.jpg"><br> Wheel of Mediocrity</a>
@@ -208,15 +86,20 @@
             <a href="https://www.neopets.com/petpetlab.phtml" class="button" target="_blank"><img src="https://images.neopets.com/items/plu_madscientist_kookith.gif"><br> Petpet Lab Ray</a>
             <a href="https://www.neopets.com/dome/" class="button" target="_blank"><img src="https://images.neopets.com/items/bd_bfm_battle_hammer.gif"><br> Battldome</a>
         </div>
+        
+        <!-- OTHER DAILIES -->
         <div class="block four dailies">
             <a href="https://www.neopets.com/island/training.phtml?type=status" class="button" target="_blank"><img src="https://images.neopets.com/items/codestone11.gif"><br> Island Training</a>
             <a href="https://www.neopets.com/pirates/academy.phtml?type=status" class="button" target="_blank"><img src="https://images.neopets.com/items/plu_capn_threelegs.gif"><br> Pirate Academy</a>
             <a href="https://www.neopets.com/stockmarket.phtml?type=portfolio" class="button" target="_blank"><img src="https://images.neopets.com/games/game_stocks.gif"><br> Stock Portfolio</a>
             <a href="https://www.neopets.com/stockmarket.phtml?type=list&bargain=true" class="button" target="_blank"><img src="https://images.neopets.com/games/game_stocks.gif"><br> Bargain Stocks</a>
         </div>
+        
         <footer>
             <p>A.P. Barnes &copy; 2025</p>
         </footer>
+        
+        <script src="https://kit.fontawesome.com/754c3ee956.js" crossorigin="anonymous"></script>
     </body>
 </html>
 
